@@ -8,7 +8,8 @@ $message = $_POST["message"];
 // Include packages
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
-require '../vendor/autoload.php';
+use PHPMailer\PHPMailer\Exception;
+require 'vendor/autoload.php';
 
 // Initialize PHP Mailer
 $mail = new PHPMailer(true);
@@ -29,8 +30,9 @@ $mail -> Password   = "bqwwgeuikyynapft";
 // Set required parameters for email header and body
 $mail -> IsHTML(true);
 $mail -> AddAddress("info@chrisedge.co.za", "Christopher Edge");
+$mail -> AddReplyTo("info@chrisedge.co.za", "Christopher Edge");
 $mail -> SetFrom($email, $name);
-$mail -> Subject = $subject;
+$mail -> Subject = "New Mail: " + $subject;
 $mail -> Body = $message;
 
 if (!$mail->Send())
@@ -40,6 +42,6 @@ if (!$mail->Send())
 }
 else
 {
-  header("Location: ../index.html");
+  header("Location: index.html");
 }
 ?>
