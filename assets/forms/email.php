@@ -14,18 +14,16 @@ require 'vendor/autoload.php';
 // Initialize PHP Mailer
 $mail = new PHPMailer(true);
 $mail -> isSMTP();
-$mail -> Mailer = "smtp";
+$mail -> SMTPAuth = true;
 
 // Set required parameters for SMTP
 $mail -> Host = "smtp.gmail.com";
-$mail -> SMTPSecure = "tls";
+$mail -> Username = "chrisportfolio31@gmail.com";
+$mail -> Password = "bqwwgeuikyynapft";
 $mail -> Port = 587;
-$mail -> SMTPAuth = TRUE;
-$mail -> SMTPDebug = 1;
+$mail -> SMTPSecure = "ssl";
 
 // Set email address parameters
-$mail -> Username   = "chrisportfolio31@gmail.com";
-$mail -> Password   = "bqwwgeuikyynapft";
 
 // Set required parameters for email header and body
 $mail -> IsHTML(true);
@@ -44,4 +42,6 @@ else
 {
   header("Location: index.html");
 }
+
+$mail -> smtpClose();
 ?>
