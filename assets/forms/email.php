@@ -28,7 +28,7 @@ $mail -> Password   = "bqwwgeuikyynapft";
 
 // Set required parameters for email header and body
 $mail -> IsHTML(true);
-$mail -> AddAddress("christopheredge3110@gmail.com", "Christopher Edge");
+$mail -> AddAddress("info@chrisedge.co.za", "Christopher Edge");
 $mail -> SetFrom($email, $name);
 $mail -> Subject = $subject;
 $mail -> Body = $message;
