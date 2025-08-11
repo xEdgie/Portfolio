@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
 body {
-  background-color: rgba(31, 41, 55, 1);
+  background-color: #2C2C2C;
   color: rgba(229, 231, 235, 1);
+}
+
+/* https://colorhunt.co/palette/f7374f88304e5225462c2c2c */
+
+.font-primary {
+  color: #F7374F;
 }

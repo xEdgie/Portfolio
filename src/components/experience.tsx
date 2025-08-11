@@ -1,9 +1,14 @@
+import ExperienceItem from "./experience-item.tsx"
+import Spinner from "./spinner.tsx"
+
 export default function Experience() {
     return(
         <section id="experience">
-            <div className="m-auto w-8/12 text-center my-10">
-                <h2 className="text-6xl font-bold">Frontend Developer</h2>
-                <p>temp</p>
+            <div className="px-10 mb-20">
+                <Spinner caption="My experience" />
+                <div className="grid gap-14">
+                    <ExperienceItem title="Frontend Developer & Marketing" company="Overcoats" time="2023 - Present" />
+                </div>
             </div>
         </section>
     )

@@ -1,6 +1,6 @@
 export default function Header () {
     return (
-        <header className="fixed top-0 items-center bg-black/50 backdrop-blur-md h-20">
+        <header className="fixed top-0 items-center bg-black/50 backdrop-blur-md h-20 z-50">
             <nav className="grid grid-cols-3 w-full h-full">
                 <ul className="flex m-1 col-start-2 items-center justify-center">
                     <a href="#overview"><li className="nav-item">Overview</li></a>
