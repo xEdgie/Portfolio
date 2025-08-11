@@ -1,5 +1,8 @@
 import ProjectCard from './project-card.tsx'
 
+import TaskTribeImg from '../assets/tasktribe.png'
+import StockSnapImg from '../assets/stocksnap.png'
+
 export default function projects() {
     return(
         <section id="projects">
@@ -7,7 +10,7 @@ export default function projects() {
             <ProjectCard 
                 title="TaskTribe"
                 desc="TaskTribe helps your team work together seamlessly. Create and assign tasks, track progress, and boost productivity."
-                src="/src/assets/tasktribe.png"
+                src={ TaskTribeImg }
                 alt="A screenshot from the TaskTribe website"
                 url="https://tasktribe.app"
                 newTab={true}
@@ -15,7 +18,7 @@ export default function projects() {
             <ProjectCard 
                 title="StockSnap"
                 desc="StockSnap is a collaborative inventory and stock taking system."
-                src="/src/assets/stocksnap.png"
+                src={ StockSnapImg }
                 alt="A screenshot from the StockSnap website"
                 url="https://stocksnap.co.za"
                 newTab={true}
