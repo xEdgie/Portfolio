@@ -33,7 +33,6 @@ export default function Skills() {
                             <StackElement name="Tailwind CSS" src={ TailwindCSSLogo } alt="Tailwind CSS logo" />
                             <StackElement name="React" src={ ReactLogo } alt="React logo" />
                             <StackElement name="Next.js" src={ NextJSLogo } alt="NextJS logo" />
-                            <StackElement name="Motion" src={ MotionLogo } alt="Motion logo" />
                         </div>
                     </div>
                     <div className="grid grid-cols-12">

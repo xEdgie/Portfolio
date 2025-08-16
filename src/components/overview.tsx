@@ -9,7 +9,7 @@ export default function overview() {
                         <span className="ml-4">DEVELOPER</span>
                     </h1>
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-gray-400">
-                        Hi! I'm <span className="font-medium text-gray-50">Chris</span>. A creative Frontend Developer with 3+ years of experience in building high-performance, scalable, and responsive web solutions.
+                        Hi! I'm <span className="font-medium text-gray-50">Chris</span>, a Frontend Developer passionate about crafting clean, responsive, and user-friendly websites.
                     </p>
                 </div>
             </div>
